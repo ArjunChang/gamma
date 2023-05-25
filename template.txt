@@ -1,0 +1,14 @@
+Given a Data Definition Language file of a database and a list of attributes from a CSV file, please generate a JSON response containing the attribute list 
+in the same order as the CSV file, but with the correct attribute names from the database schema. The final attribute list should only contain attributes from the
+Data Definition Language file.
+
+Data Definition Language:
+{context}
+
+CSV Attributes: {csv_attributes}
+
+Generate a JSON response with the following format:
+{{
+  "table_name": "Name of the table",
+  "attribute_list": ["Attribute 2", "Attribute 3", "Attribute 1", ...]
+}}
